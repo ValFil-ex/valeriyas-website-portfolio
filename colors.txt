@@ -1,0 +1,8 @@
+black #333
+background gray #7a7a7a
+light gray #ddd
+
+links blue #45709d
+highlights mint #62d2ae
+
+white #f2f2f2
