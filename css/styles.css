@@ -90,11 +90,13 @@ ul.cloud a {
     position: relative;
     font-weight: bold;
 
+
     --size: 4;
     font-size: calc(var(--size) * 0.25rem + 0.5rem);
 
     opacity: calc((15 - (9 - var(--size))) / 15);
 }
+
 
 
 .about_skills {
@@ -106,8 +108,9 @@ ul.cloud a {
 }
 
 .about_skills img{
-    width: 80px;
-    height: 87px;
+    max-width: 100px;
+    height: 100px;
+    object-fit: contain;
     margin: 7px;
     transition: .3s ease-in-out;
 }
@@ -294,7 +297,11 @@ ul.cloud a {
 
 
 #work.main{
-    background-color: #7a7a7a;
+    background-color: #62d2ae;
+}
+
+#work h1{
+    color: #333;
 }
 
 .grid {
@@ -400,8 +407,21 @@ div.layout {
     font-size: 24px;
 }
 
+.contact__text a{
+    padding: 10px;
+}
 
-.profile__footer {
+/*#personal.main {
+    min-height: 50vh;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    background-color: #ddd;
+    color: #333;
+}*/
+
+
+.profile__footer{
 
     text-align: center;
     bottom: 0;
@@ -508,6 +528,11 @@ div.layout {
     .about p{
         font-size: 11px;
     }
+
+    ul.cloud {
+        line-height: 1.5rem;
+    }
+
     ul.cloud a {
         --size: 4;
         font-size: calc(var(--size) * 0.15rem + 0.3rem);
