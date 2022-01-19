@@ -27,12 +27,13 @@
 </header>
 <a id="home"></a>
 <div class="main" id="profile">
-    <div class="profile__text">
+    <div class="profile-text">
         <h1>Hello, I am Valeriya Filatova </h1>
-        <p>An aspiring web-developer from Vienna, and I ❤️ to code!</p>
-        <button href="#work" class="button">My portfolio</button>
+        <p>an aspiring web-developer from Vienna, and I ❤️ to code!</p>
+        <div class="profile-button">
+            <a href="#work" class="button">My portfolio</a>
+        </div>
     </div>
-
 </div>
 
 <a name="about"></a>
@@ -40,17 +41,18 @@
     <h1>About </h1>
     <div class="about">
         <p>I’m a beginner web-developer with an <span style="font-weight:bold;">Associate Degree in Web-Development</span> from FH Technikum Wien. I am eager to start working in a real team, learn and improve my skills. </p>
-        <p>I started my professional career more than 10 years ago. Although it had little to do with computer science or programming, due to my first <span style="font-weight:bold;">university degree in Translation and Interpreting </span> I had a chance to work in various multinational companies with teams from around the world. My previous working experience allowed me to learn from my collaborators and acquire new valuable skills in project management and solid understanding of business processes. Recent projects I supported were related to IT operations, which gave me a glimpse of how things work there and ignited my interest in programming.</p>
+        <p>I started my professional career more than 10 years ago. Although it had little to do with computer science or programming, due to my first <span style="font-weight:bold;">university degree in Translation and Interpreting </span> I had a chance to work in various multinational companies with teams from around the world. My previous working experience allowed me to learn from my collaborators and acquire new valuable skills in project management and solid understanding of business processes. Recent projects I supported were related to IT operations, which sparked my interest in tech.</p>
         <p>And this is how I ended up studying again and coding my way to my new profession <i class="far fa-smile-wink"></i>  </p>
         </br>
 
-        <h2>Things I studied: </h2>
-        <div id="about_study">
-            <div class="cloud_container">
+        <!--TODO: add tooltips with more info-->
+        <h2>What I studied: </h2>
+        <div id="about-study">
+            <div class="cloud-container">
                 <ul class="cloud" role="navigation" aria-label="Webdev study skills" data-aos="fade-up" data-aos-delay="100">
                     <li><a data-weight="9">Web-Frameworks </a></li>
                     <li ><a data-weight="2">Project Management </a></li>
-                    <li><a data-weight="7">Databanks Basics</a></li>
+                    <li><a data-weight="7">Database Basics</a></li>
                     <li><a data-weight="6">IT Infrastructure</a></li>
                     <li><a data-weight="7">OOP</a></li>
                     <li><a data-weight="3">Agile Methods</a></li>
@@ -63,12 +65,12 @@
                     <li><a data-weight="6">Software Architecture Design</a></li>
                     <li><a data-weight="4">UI/UX</a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!--/.cloud-container-->
+        </div><!--/#about-study-->
 
         <br />
         <h2>Technologies I used for my projects:</h2>
-        <div class="about_skills" data-aos="fade-left" data-aos-delay="100">
+        <div class="about-skills" data-aos="fade-left" data-aos-delay="100">
             <img src="assets/js_logo.png" alt="Javascript logo">
             <img src="assets/HTML_logo.png" alt="HTML">
             <img src="assets/css_logo.png" alt="CSS">
@@ -76,7 +78,7 @@
             <img src="assets/jquery-logo.png" alt="JQuery">
         </div>
 
-        <div class="about_skills" data-aos="fade-right" data-aos-delay="100">
+        <div class="about-skills" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/MySQL-logo.png" alt="MySQL">
             <img src="assets/git_logo.png" alt="GIT">
             <img src="assets/php_logo.png" alt="PHP">
@@ -87,18 +89,20 @@
         <br />
 
         <h2> A few more words about me:</h2>
-        <ul class="bio-facts">
+        <ul class="personal-info">
             <li>
-                I speak three languages and want to learn more, programming languages included!
+                I speak three languages: English, German and Russian is my mother tongue.
             </li>
             <li>
                 I lived and worked in Asia, US and Europe, so I am not afraid of challenges and changes.
             </li>
             <li>
-                I like hiking, cycling, travelling, doing yoga, creating art, reading and ... of course coding.
+                I like mountains, cycling, travelling, yoga, creating art, reading and ... of course coding.
             </li>
         </ul>
         <br />
+
+        <!--TODO : add actual CV file-->
         <div class="cv">
             <a href="files/CV_Filatova.txt" class="button" download target="_blank"
                alt="CV download button">Download my
@@ -107,16 +111,16 @@
     </div> <!--/.about-->
 </div><!--/.main #about-->
 
-
+<!--TODO : finalise projects-->
 <a name="work"></a>
 <div class="main" id="work">
     <h1>My portfolio</h1>
     <section class="grid">
-        <section class="grid__item" data-aos="fade-up" data-aos-delay="100">
+        <section class="grid-project" data-aos="fade-up" data-aos-delay="100">
             <section>
                 <h3>Web-shop App Module</h3>
                 <div class="layout">
-                    <img src="assets/web-shop-app-demo.png" class="grid_img">
+                    <img src="assets/web-shop-app-demo.png" class="grid-img">
                     <div class="overlay">
                         <p>
                             <span>JS</span><span>Bootstrap</span><span>PHP</span>
@@ -132,11 +136,11 @@
                 <a class="button" href="https://webstorebackend.000webhostapp.com/#" target="_blank">Demo</a>
             </footer>
         </section>
-        <section class="grid__item" data-aos="fade-up" data-aos-delay="300">
+        <section class="grid-project" data-aos="fade-up" data-aos-delay="300">
             <section>
                 <h3>Pinball Game Simulation </h3>
                 <div class="layout">
-                    <img src="assets/web-shop-app-demo.png" class="grid_img">
+                    <img src="assets/web-shop-app-demo.png" class="grid-img">
                     <div class="overlay">
                         <p>
                             <span>Java</span>
@@ -151,12 +155,12 @@
                 <a class="button" href="https://github.com/ValFil-ex/pinball-game.git" target="_blank">Code</a>
             </footer>
         </section>
-        <section class="grid__item" data-aos="fade-up" data-aos-delay="500">
+        <section class="grid-project" data-aos="fade-up" data-aos-delay="500">
 
             <section>
                 <h3>Client Management Module</h3>
                 <div class="layout">
-                    <img src="assets/web-shop-app-demo.png" class="grid_img">
+                    <img src="assets/web-shop-app-demo.png" class="grid-img">
 
                     <div class="overlay">
                         <p>
@@ -177,19 +181,15 @@
     </section>
 </div> <!--/#work.main-->
 
-
+<!--TODO: add slider -->
 <!--<a name="personal"></a>
 <div class="main" id="personal">
     <div class="personal-text">personal text</div>
-
 </div>-->
-
-
 
 <a name="contact"></a>
 <div class="main" id="contact">
-
-    <div class="contact__text">
+    <div class="contact-content">
         <img src="assets/IMG_1713.png" alt="Valeriya's photo" class="profile__portrait">
         <h2>Contact me:</h2>
         <a href="mailto:filatovav@yahoo.com" target="_blank">
@@ -201,16 +201,8 @@
         <a href="https://github.com/ValFil-ex" target="_blank">
             <i class="fab fa-github fa-1x"></i>
         </a>
-    </div>
-
-</div>
-
-
-
-
-
-
-
+    </div><!--/.contact-content-->
+</div><!--/#work.contact-content-->
 
 
 <script src="js/scripts.js"></script>
