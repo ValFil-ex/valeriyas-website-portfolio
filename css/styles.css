@@ -305,6 +305,7 @@ div.layout {
     max-width: 100%;
     transition: .5s ease-in-out;
     border-radius: 5px;
+    max-height: 200px;
 
 }
 
@@ -395,6 +396,12 @@ div.layout {
     border-top: 2px solid #f2f2f2;
     font-size: small;
 }*/
+
+@media all and (max-width: 1400px){
+    h3{
+        font-size: 1em;
+    }
+}
 
 @media all and (max-width: 992px){
     .topnav{
